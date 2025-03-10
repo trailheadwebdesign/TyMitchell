@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 function Navbar({ scrolled, bgColor = "bg-white" }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,34 +28,29 @@ function Navbar({ scrolled, bgColor = "bg-white" }) {
                 <a 
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className={`
-                    ${scrolled ? 'text-slate-700 hover:text-blue-600' : 'text-slate-800 hover:text-blue-600'} 
-                    transition-colors duration-200 text-sm font-medium
-                  `}
+                  className={`transition-colors duration-200 text-sm font-medium ${
+                    scrolled ? 'text-slate-700 hover:text-blue-600' : 'text-slate-800 hover:text-blue-600'
+                  }`}
                 >
                   {item}
                 </a>
               ))}
             </nav>
             
-            {/* Call to action */}
+            {/* Desktop Resume Button */}
             <div className="hidden md:block">
               <a 
                 href="Resume.pdf" 
                 download="Ty Mitchell's Resume"
-                className={`
-                  ${scrolled 
-                    ? 'bg-blue-600 text-white hover:bg-blue-700' 
-                    : 'bg-blue-600 bg-opacity-90 text-white hover:bg-opacity-100'
-                  }
-                  px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200
-                `}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                  scrolled ? 'bg-blue-600 text-white hover:bg-blue-700' 
+                  : 'bg-blue-600 bg-opacity-90 text-white hover:bg-opacity-100'
+                }`}
               >
                 Download Resume
               </a>
             </div>
 
-            
             {/* Mobile menu button */}
             <div className="md:hidden flex items-center">
               <button
@@ -82,7 +77,7 @@ function Navbar({ scrolled, bgColor = "bg-white" }) {
           {/* Mobile menu with animation */}
           <div 
             className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-              mobileMenuOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
+              mobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg rounded-lg mt-2">
@@ -90,42 +85,31 @@ function Navbar({ scrolled, bgColor = "bg-white" }) {
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className={`
-                    block px-3 py-2 text-base font-medium text-slate-800 hover:text-blue-600
+                  className={`block px-3 py-2 text-base font-medium text-slate-800 hover:text-blue-600
                     transform transition-all duration-300 ease-in-out
                     ${mobileMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-4 opacity-0'}
-                    ${mobileMenuOpen ? `transition-delay-${index * 50}` : ''}
                   `}
-                  style={{ 
-                    transitionDelay: mobileMenuOpen ? `${index * 50}ms` : '0ms' 
-                  }}
+                  style={{ transitionDelay: mobileMenuOpen ? `${index * 50}ms` : '0ms' }}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item}
                 </a>
               ))}
+              {/* Mobile Resume Download Button */}
               <a
-                href="/resume.pdf"
-                target="_blank"
-                className={`
-                  block px-3 py-2 text-base font-medium text-blue-600 hover:text-blue-700
-                  transform transition-all duration-300 ease-in-out
-                  ${mobileMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-4 opacity-0'}
-                  ${mobileMenuOpen ? 'transition-delay-250' : ''}
-                `}
-                style={{ 
-                  transitionDelay: mobileMenuOpen ? '250ms' : '0ms' 
-                }}
+                href="Resume.pdf"
+                download="Ty Mitchell's Resume"
+                className="block w-full px-3 py-2 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 text-center rounded-md transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Download CV
+                Download Resume
               </a>
             </div>
           </div>
         </div>
       </header>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

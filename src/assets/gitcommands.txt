@@ -1,0 +1,43 @@
+
+Ty@DESKTOP-UO83LVH MINGW64 /c/Professional Website (main)
+$ git add . 
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+Ty@DESKTOP-UO83LVH MINGW64 /c/Professional Website (main)
+$ git commit -m "updated tab text"
+[main 9fcba84] updated tab text
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ty@DESKTOP-UO83LVH MINGW64 /c/Professional Website (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:trailheadwebdesign/TyMitchell.git
+   0998254..9fcba84  main -> main
+
+Ty@DESKTOP-UO83LVH MINGW64 /c/Professional Website (main)
+$ git add .
+
+Ty@DESKTOP-UO83LVH MINGW64 /c/Professional Website (main)
+$ git commit -m "changed MBA year"
+[main 602770f] changed MBA year
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ty@DESKTOP-UO83LVH MINGW64 /c/Professional Website (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 419 bytes | 419.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To github.com:trailheadwebdesign/TyMitchell.git
+   9fcba84..602770f  main -> main
+
+Ty@DESKTOP-UO83LVH MINGW64 /c/Professional We
