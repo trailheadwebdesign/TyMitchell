@@ -41,7 +41,7 @@ function Navbar({ scrolled, bgColor = "bg-white" }) {
             {/* Call to action */}
             <div className="hidden md:block">
               <a 
-                href="src\assets\Resume.pdf" 
+                href="Resume.pdf" 
                 download="Ty Mitchell's Resume"
                 className={`
                   ${scrolled 

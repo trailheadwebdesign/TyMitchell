@@ -14,7 +14,7 @@ function About() {
             {/* Profile Image */}
             <div className="relative rounded-lg overflow-hidden shadow-xl w-full max-w-[350px]">
               <img
-                src={imageError ? "https://placehold.co/600x400?text=Profile+Image" : "src/assets/pfp.jpg"}
+                src={imageError ? "https://placehold.co/600x400?text=Profile+Image" : "pfp.jpg"}
                 alt="About Me"
                 className="w-full h-auto object-cover rounded-lg"
                 onError={() => setImageError(true)}

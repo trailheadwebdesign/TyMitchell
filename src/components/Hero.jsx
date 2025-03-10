@@ -97,7 +97,7 @@ function Hero() {
               <div className="absolute inset-0 bg-blue-600 rounded-lg transform rotate-3 translate-x-4 translate-y-4 opacity-20"></div>
               <div className="relative overflow-hidden rounded-lg shadow-xl">
                 <img 
-                  src="src/assets/pfp.jpg" 
+                  src="pfp.jpg" 
                   alt="Ty Mitchell" 
                   className="w-full h-auto"
                 />
