@@ -114,7 +114,7 @@ function Skills() {
                 { 
                   degree: "Master of Business Administration in Information Technology Management (MBA)",
                   institution: "Western Governors University (WGU)",
-                  year: "2024 (In Progress)",
+                  year: "2025 (In Progress)",
                   description: "Specializing in Business IT Administration and Data Analytics."
                 },
                 { 
