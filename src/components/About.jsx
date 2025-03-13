@@ -45,7 +45,7 @@ function About() {
             <h2 className="text-3xl font-bold text-slate-800 mb-6">About Me</h2>
             <p className="text-slate-600 mb-6">
               I'm Ty Mitchell, a Business Applications Administrator at Colorado Springs Utilities, 
-              specializing in IT governance, data analytics, and enterprise technology solutions. 
+              specializing in project management, data analytics, and enterprise technology solutions. 
               I bridge the gap between business strategy and technical implementation, optimizing workflows, 
               implementing scalable IT systems, and leveraging data-driven insights to enhance decision-making.
             </p>

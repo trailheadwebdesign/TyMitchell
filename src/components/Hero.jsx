@@ -67,7 +67,7 @@ function Hero() {
             </h2>
             <p className="text-slate-600 text-lg mb-8 max-w-lg">
               Business Applications Administrator at Colorado Springs Utilities, specializing in 
-              Infor CloudSuite, IT Governance, and Data Analytics. Passionate about 
+              ERP Systems, Project Management, and Data Analytics. Passionate about 
               optimizing enterprise IT operations, developing strategic solutions, and driving 
               business efficiency through technology.
             </p>
