@@ -17,7 +17,7 @@ function Skills() {
         { name: "SQL", level: 7 },
         { name: "PowerShell", level: 4 },
         { name: "JavaScript", level: 3 },
-        { name: "Java", level: 3 }
+        { name: "Java", level: 4 }
       ]
     },
     {
