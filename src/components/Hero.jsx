@@ -6,7 +6,7 @@ function Hero() {
   const roles = [
     'Business Applications Admin',
     'Data Analyst',
-    'IT Governance Specialist',
+    'IT Leader',
     'Technology Strategist'
   ];
   
