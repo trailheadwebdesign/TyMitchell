@@ -10,7 +10,7 @@ function Experience() {
         company: "Colorado Springs Utilities",
         period: "2024 - Present",
         description: "Managing Infor CloudSuite ERP system, IT governance, and business process automation. Working on data analytics, financial reporting, and optimizing enterprise applications to drive efficiency.",
-        technologies: ["Infor CloudSuite", "Azure", "Python", "Power BI", "Power Automate", "IT Liason", "SharePoint", "Project Management"]
+        technologies: ["Infor CloudSuite", "Azure", "Python", "Power BI", "Power Automate", "IT Liaison", "SharePoint", "Project Management"]
       },
       {
         title: "Lead Technician",
@@ -28,6 +28,14 @@ function Experience() {
       }
     ],
     projects: [
+      {
+        title: "OpenShift Static Web Deployment",
+        client: "Personal Project",
+        period: "2025",
+        description: "Deployed and configured a static webpage inside OpenShift's free developer environment. Managed Apache HTTP Server and custom routing to expose the project externally.",
+        technologies: ["OpenShift", "Apache", "Linux Administration", "Bash", "Containerization", "Web Hosting", "Kubernetes", "Networking & Routing"],
+        link: "http://tys-test-dev-tmitchea-dev.apps.rm1.0a51.p1.openshiftapps.com/"
+      },
       {
         title: "Infor CloudSuite Optimization",
         client: "Colorado Springs Utilities",
@@ -92,7 +100,7 @@ function Experience() {
           {experiences[activeTab].map((item, index) => (
             <div key={index} className="mb-12 relative">
               
-              {/* Timeline connector (gray line) - now fully extended to the bottom of the last item */}
+              {/* Timeline connector (gray line) */}
               <div 
                 className={`absolute left-[11px] top-6 w-px bg-slate-200 ${
                   index === experiences[activeTab].length - 1 ? "h-full bottom-0" : "bottom-0"
@@ -118,8 +126,20 @@ function Experience() {
                 </p>
                 
                 <p className="text-slate-600 mb-4">{item.description}</p>
+
+                {/* External Link for OpenShift Project */}
+                {item.link && (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 font-semibold hover:underline"
+                  >
+                    Click To View Static Page
+                  </a>
+                )}
                 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-4">
                   {item.technologies.map((tech) => (
                     <span key={tech} className="text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-full">
                       {tech}
