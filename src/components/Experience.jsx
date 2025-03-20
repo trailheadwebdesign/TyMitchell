@@ -34,7 +34,7 @@ function Experience() {
         period: "2025",
         description: "Deployed and configured a static webpage inside OpenShift's free developer environment. Managed Apache HTTP Server and custom routing to expose the project externally.",
         technologies: ["OpenShift", "Apache", "Linux Administration", "Bash", "Containerization", "Web Hosting", "Kubernetes", "Networking & Routing"],
-        link: "http://tys-test-dev-tmitchea-dev.apps.rm1.0a51.p1.openshiftapps.com/"
+        link: ""
       },
       {
         title: "Infor CloudSuite Optimization",
