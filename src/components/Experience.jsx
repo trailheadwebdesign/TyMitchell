@@ -54,7 +54,7 @@ function Experience() {
 
       {
         title: "Webinar, Operational Excellence with Intelligent ALM",
-        period: "March 2025",
+        period: "2025",
         description: `Attended a live webinar titled "Achieve Operational Excellence in Manufacturing with Intelligent Asset Lifecycle Management (ALM)," hosted on March 24, 2025. The session covered modern strategies in asset management, including predictive maintenance, AI integration, and ALM best practices. Strengthened understanding of real-time data monitoring and enterprise transformation through intelligent asset management.`,
         technologies: [
           "Asset Lifecycle Management", "Operational Excellence", "AI in Manufacturing",
