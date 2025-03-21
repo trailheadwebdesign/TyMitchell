@@ -1,13 +1,14 @@
 function Skills() {
   const skillCategories = [
     {
-      name: "Cloud & IT Administration",
+      name: "Cloud & MAS Administration",
       skills: [
-        { name: "Azure", level: 5 },
-        { name: "SharePoint", level: 6 },
-        { name: "IT Governance", level: 3 },
-        { name: "System Administration", level: 4 },
-        { name: "Networking", level: 3 }
+        { name: "IBM Maximo (9.0)", level: 3 },
+        { name: "MAS Configuration & Integration", level: 3 },
+        { name: "OpenShift & Containerization", level: 3 },
+        { name: "Linux (Ubuntu, RHEL)", level: 5 },
+        { name: "ServiceNow Ticket Management", level: 3 },
+        { name: "Asset Management Lifecycle", level: 3 }
       ]
     },
     {
@@ -17,14 +18,15 @@ function Skills() {
         { name: "SQL", level: 7 },
         { name: "PowerShell", level: 4 },
         { name: "JavaScript", level: 3 },
-        { name: "Java", level: 4 }
+        { name: "Java", level: 4 },
+        { name: "Bash", level: 5 }
       ]
     },
     {
       name: "Data & Business Analytics",
       skills: [
         { name: "Power BI", level: 6 },
-        { name: "SQL Server", level: 5 },
+        { name: "SQL Server", level: 4 },
         { name: "Data Modeling", level: 6 },
         { name: "Excel (Advanced)", level: 6 },
         { name: "AI Querying & Automation", level: 7 }
@@ -37,7 +39,7 @@ function Skills() {
         { name: "IT Strategy & Governance", level: 4 },
         { name: "Agile & Scrum", level: 3 },
         { name: "Process Optimization", level: 5 },
-        { name: "Risk Management", level: 2 }
+        { name: "Risk Management", level: 3 }
       ]
     }
   ];
@@ -49,29 +51,65 @@ function Skills() {
           Skills & Expertise
         </h2>
 
-        {/* Skill Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-          {skillCategories.map((category) => (
-            <div key={category.name} className="card p-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-6">{category.name}</h3>
+        {/* Unified Skill Level Legend */}
+        <div className="mt-10 mb-16">
+          <h3 className="text-md font-semibold text-slate-800 mb-4 text-center">Skill Level Reference</h3>
+          <div className="relative w-full md:w-2/3 lg:w-1/2 mx-auto">
+            <div className="w-full h-4 rounded-full overflow-hidden shadow-md flex">
+              {Array.from({ length: 7 }).map((_, idx) => {
+                let bg = '';
+                if (idx <= 2) bg = 'bg-blue-200';
+                else if (idx <= 4) bg = 'bg-blue-500';
+                else bg = 'bg-blue-800';
 
+                return (
+                  <div
+                    key={idx}
+                    className={`${bg} relative`}
+                    style={{ width: '14.2857%' }}
+                  >
+                    {idx < 6 && (
+                      <div className="absolute inset-y-0 right-0 w-px bg-white opacity-80"></div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="flex justify-between mt-3 text-sm text-slate-600 font-medium">
+              <span className="text-left w-1/3">1–3: Familiar / Learning</span>
+              <span className="text-center w-1/3">4–5: Proficient / Comfortable</span>
+              <span className="text-right w-1/3">6–7: Skilled / Advanced</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Skill Categories */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {skillCategories.map((category) => (
+            <div key={category.name} className="card p-6 border border-slate-200 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold text-slate-900 mb-6">{category.name}</h3>
               <div className="space-y-5">
                 {category.skills.map((skill) => (
                   <div key={skill.name}>
                     <div className="flex justify-between items-center mb-1">
                       <span className="text-slate-700 font-medium">{skill.name}</span>
                     </div>
-                    <div className="w-full bg-slate-200 rounded-full h-3 relative overflow-hidden shadow-md">
-                      {/* Split bar with 7 segments */}
-                      {Array.from({ length: 7 }).map((_, idx) => (
-                        <div 
-                          key={idx}
-                          className={`absolute top-0 h-full border-r border-slate-300 transition-all ${
-                            idx < skill.level ? 'bg-blue-600' : ''
-                          }`}
-                          style={{ width: "14.2857%", left: `${idx * 14.2857}%` }}
-                        ></div>
-                      ))}
+                    <div className="w-full bg-slate-200 rounded-full h-3 relative overflow-hidden shadow-inner">
+                      {Array.from({ length: 7 }).map((_, idx) => {
+                        let bgColor = '';
+                        if (idx < skill.level) {
+                          if (idx <= 2) bgColor = 'bg-blue-200';
+                          else if (idx <= 4) bgColor = 'bg-blue-500';
+                          else bgColor = 'bg-blue-800';
+                        }
+                        return (
+                          <div
+                            key={idx}
+                            className={`${bgColor} absolute top-0 h-full border-r border-white`}
+                            style={{ width: '14.2857%', left: `${idx * 14.2857}%` }}
+                          ></div>
+                        );
+                      })}
                     </div>
                   </div>
                 ))}
@@ -80,51 +118,26 @@ function Skills() {
           ))}
         </div>
 
-        {/* Certifications (Commented Out for Now) */}
-        {/*
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-slate-900 mb-6">Certifications</h3>
-          <div className="space-y-4">
-            {[
-              { name: "Microsoft Certified: Azure Administrator Associate", year: "2024" },
-              { name: "Microsoft Certified: Power BI Data Analyst Associate", year: "2023" },
-              { name: "ITIL Foundation Certification", year: "2023" },
-              { name: "CompTIA Security+ (In Progress)", year: "2024" }
-            ].map((cert) => (
-              <div key={cert.name} className="flex items-start">
-                <svg className="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <div>
-                  <h4 className="font-medium text-slate-900">{cert.name}</h4>
-                  <p className="text-sm text-slate-500">Issued {cert.year}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        */}
-
-        {/* Centered Education Section */}
+        {/* Education Section */}
         <div className="mt-16 flex justify-center">
           <div className="w-full md:w-2/3 lg:w-1/2">
             <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">Education</h3>
             <div className="space-y-6">
               {[
-                { 
+                {
                   degree: "Master of Business Administration in Information Technology Management (MBA)",
                   institution: "Western Governors University (WGU)",
                   year: "2025 (In Progress)",
                   description: "Specializing in Business IT Administration and Data Analytics."
                 },
-                { 
+                {
                   degree: "Bachelor of Science in Information Systems",
                   institution: "University of Colorado Colorado Springs",
                   year: "2024",
                   description: "Focused on Data Analytics, IT Strategy, and Project Management."
                 }
               ].map((edu) => (
-                <div key={edu.degree} className="card p-4 text-center">
+                <div key={edu.degree} className="card p-4 text-center border border-slate-200 rounded-lg">
                   <h4 className="font-bold text-slate-900">{edu.degree}</h4>
                   <p className="text-blue-600">{edu.institution}</p>
                   <p className="text-sm text-slate-500 mb-2">{edu.year}</p>
@@ -134,10 +147,9 @@ function Skills() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
-  )
+  );
 }
 
 export default Skills;

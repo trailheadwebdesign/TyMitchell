@@ -6,7 +6,7 @@ function Experience() {
   const experiences = {
     work: [
       {
-        title: "Business Applications Administrator",
+        title: "Business Applications Administrator (Accounting)",
         company: "Colorado Springs Utilities",
         period: "2024 - Present",
         description: "Managing Infor CloudSuite ERP system, IT governance, and business process automation. Working on data analytics, financial reporting, and optimizing enterprise applications to drive efficiency.",
