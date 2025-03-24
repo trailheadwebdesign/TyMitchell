@@ -12,11 +12,11 @@ function OpenShiftProject() {
 
         {/* Overview */}
         <div className="mt-6">
-          <p className="text-lg text-slate-700 leading-relaxed">
-            I deployed a <strong>containerized Apache HTTP Server</strong> within the Red Hat OpenShift Developer Sandbox.
-            This project showcases my ability to manage <strong>cloud-native infrastructure</strong>, 
-            <strong> container orchestration</strong>, and <strong>CLI-based deployments</strong> from scratch.
-          </p>
+            <p className="text-lg text-slate-700 leading-relaxed">
+            I deployed a containerized Apache HTTP Server within the Red Hat OpenShift Developer Sandbox.
+            This project showcases my ability to manage cloud-native infrastructure, container orchestration, and CLI-based deployments from scratch.
+            </p>
+
         </div>
 
         {/* Flex Layout for Commands and Image */}
@@ -52,7 +52,7 @@ function OpenShiftProject() {
               <h3 className="text-xl font-semibold text-blue-600 mb-3">🧠 Skills Demonstrated</h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "OpenShift CLI", "Linux Terminal", "Containerization",
+                  "OpenShift CLI", "Linux", "Containerization",
                   "Apache Web Server", "Bash", "Cloud Infrastructure",
                   "Networking", "Troubleshooting"
                 ].map((skill) => (
