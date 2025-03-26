@@ -37,7 +37,7 @@ function Experience() {
         technologies: ["OpenShift", "Apache", "Linux Administration", "Bash", "Containerization", "Web Hosting", "Kubernetes", "Networking & Routing"],
         links: [
           { label: "View Project", url: "/openshift-project" },
-          { label: "View My Notes", url: "/public/OpenShiftNotes.pdf" }
+          { label: "View My Notes", url: "OpenShiftNotes.pdf" }
         ]
       },
 
@@ -48,7 +48,7 @@ function Experience() {
         technologies: ["IBM Maximo", "Enterprise Asset Management", "SaaS", "Cloud Platforms", "Software Analysis", "Digital Transformation"],
         links: [
           { label: "Free Trial Link", url: "https://www.ibm.com/account/reg/us-en/signup?formid=urx-52271" },
-          { label: "View My Notes", url: "/public/MaximoNotes.pdf" }
+          { label: "View My Notes", url: "MaximoNotes.pdf" }
         ]
       },
 
@@ -62,7 +62,7 @@ function Experience() {
         ],
         links: [
           { label: "Webinar Overview", url: "public/WebinarOverview.pdf" },
-          { label: "Session Takeaways", url: "/public/WebinarNotes.pdf" }
+          { label: "Session Takeaways", url: "WebinarNotes.pdf" }
         ]
       },
 
