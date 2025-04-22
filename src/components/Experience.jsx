@@ -6,7 +6,7 @@ function Experience() {
   const experiences = {
     work: [
       {
-        title: "Business Applications Administrator (Accounting)",
+        title: "Business Applications Analyst (Accounting)",
         company: "Colorado Springs Utilities",
         period: "2024 - Present",
         description:
@@ -23,7 +23,7 @@ function Experience() {
         ],
       },
       {
-        title: "Lead Technician",
+        title: "IT Systems Analyst – Data Strategy & Governance",
         company: "The Challenger Group",
         period: "2024",
         description:
@@ -37,11 +37,11 @@ function Experience() {
         ],
       },
       {
-        title: "Help Desk Lead",
+        title: "IT Service & Operations Lead",
         company: "University of Colorado Colorado Springs",
         period: "2020-2024",
         description:
-          "Managed and led a team of 40 student employees, overseeing IT support operations and workflow efficiency. Improved response times and system reliability through automation and training initiatives.",
+          "Managed and led a team of 40 student employees, overseeing IT support operations and workflow efficiency. Improved response times and system reliability through automation, analytics and training initiatives.",
         technologies: [
           "Active Directory",
           "PowerShell",
@@ -56,98 +56,42 @@ function Experience() {
     ],
     projects: [
       {
-        title: "OpenShift Static Web Deployment",
-        period: "2025",
-        description: `Deployed and configured a static webpage using OpenShift's free developer sandbox environment. Managed Apache HTTP Server, container deployment, and custom routing. Originally hosted at 'https://tys-test-dev-tmitchea-dev.apps.rm1.0a51.p1.openshiftapps.com' but was removed by OpenShift due to sandbox resource limitations.`,
-        technologies: [
-          "OpenShift",
-          "Apache",
-          "Linux Administration",
-          "Bash",
-          "Containerization",
-          "Web Hosting",
-          "Kubernetes",
-          "Networking & Routing",
-        ],
-        links: [
-          { label: "View Project", url: "/openshift-project" },
-          { label: "View My Notes", url: "/OpenShiftNotes.pdf" },
-        ],
-      },
-      {
-        title: "IBM Maximo Application Suite Analysis",
-        period: "2025",
-        description: `Completed an in-depth analysis of the IBM Maximo Application Suite (MAS 9), evaluating its features, usability, deployment options, and value to enterprise asset management. Gained hands-on experience navigating the MAS interface, understanding its integration capabilities, and documenting the suite's full functionality.`,
-        technologies: [
-          "IBM Maximo",
-          "Enterprise Asset Management",
-          "SaaS",
-          "Cloud Platforms",
-          "Software Analysis",
-          "Digital Transformation",
-        ],
-        links: [
-          {
-            label: "Free Trial Link",
-            url: "https://www.ibm.com/account/reg/us-en/signup?formid=urx-52271",
-          },
-          { label: "View My Notes", url: "/MaximoNotes.pdf" },
-        ],
-      },
-      {
-        title: "Webinar, Operational Excellence with Intelligent ALM",
-        period: "2025",
-        description: `Attended a live webinar titled "Achieve Operational Excellence in Manufacturing with Intelligent Asset Lifecycle Management (ALM)," hosted on March 24, 2025. The session covered modern strategies in asset management, including predictive maintenance, AI integration, and ALM best practices. Strengthened understanding of real-time data monitoring and enterprise transformation through intelligent asset management.`,
-        technologies: [
-          "Asset Lifecycle Management",
-          "Operational Excellence",
-          "AI in Manufacturing",
-          "Predictive Maintenance",
-          "Cloud-Based ERP",
-          "Digital Transformation",
-        ],
-        links: [
-          { label: "Webinar Overview", url: "/WebinarOverview.pdf" },
-          { label: "Session Takeaways", url: "/WebinarNotes.pdf" },
-        ],
-      },
-      {
-        title: "Infor CloudSuite Optimization",
+        title: "Financial Reporting & Data Automation (Infor CloudSuite)",
         period: "2024",
         description:
-          "Led efforts in optimizing Infor CloudSuite for financial reporting and IT governance. Focused on process automation, financial system improvements, and data analytics.",
+          "Automated recurring financial reports and optimized SQL queries within Infor CloudSuite to support compliance, forecasting, and executive dashboards. Streamlined data pipelines and improved reporting consistency through Power BI visualizations.",
         technologies: [
           "Infor CloudSuite",
           "SQL",
           "Power BI",
           "Azure",
-          "Business Analytics",
+          "Financial Analytics",
         ],
       },
       {
-        title: "SharePoint System Revamp",
+        title: "Governed Document Analytics with SharePoint",
         period: "2024",
         description:
-          "Revamped SharePoint for document management and team collaboration. Implemented best practices for IT governance and data security.",
+          "Redesigned SharePoint structure to enable metadata-driven file categorization and usage reporting. Created automated Power BI dashboards to analyze content lifecycle, access patterns, and storage optimization across departments.",
         technologies: [
           "SharePoint",
+          "Power BI",
           "Power Automate",
           "Azure",
-          "IT Governance",
-          "Project Management",
+          "Governance Reporting",
         ],
       },
       {
-        title: "Project Management Web App",
+        title: "Data-Driven Project Management System",
         period: "2024",
         description:
-          "Developed a database-driven project management system for Oracle using Flask and MySQL, integrating data analytics for tracking project efficiency.",
+          "Built a full-stack web application to track project KPIs, team performance, and deadlines using Flask and MySQL. Integrated data visualization and analytics features to enable stakeholder insights into project health and resource efficiency.",
         technologies: [
+          "Python",
           "Flask",
           "MySQL",
-          "Python",
-          "Data Analytics",
           "Power BI",
+          "Data Visualization",
         ],
       },
     ],
@@ -159,7 +103,7 @@ function Experience() {
         {text}
       </p>
     );
-  };  
+  };
 
   return (
     <section id="experience" className="py-24 bg-slate-50">

@@ -66,7 +66,7 @@ function Hero() {
               <span className="animate-blink">|</span>
             </h2>
             <p className="text-slate-600 text-lg mb-8 max-w-lg">
-              Business Applications Administrator at Colorado Springs Utilities, specializing in 
+              Business Applications Analyst at Colorado Springs Utilities, specializing in 
               ERP Systems, Project Management, and Data Analytics. Passionate about 
               optimizing enterprise IT operations, developing strategic solutions, and driving 
               business efficiency through technology.

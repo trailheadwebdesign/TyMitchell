@@ -1,47 +1,49 @@
 function Skills() {
   const skillCategories = [
     {
-      name: "Cloud & MAS Administration",
+      name: "Data Analytics & Visualization",
       skills: [
-        { name: "IBM Maximo (9.0)", level: 3 },
-        { name: "MAS Configuration & Integration", level: 3 },
-        { name: "OpenShift & Containerization", level: 3 },
-        { name: "Linux (Ubuntu, RHEL)", level: 5 },
-        { name: "ServiceNow Ticket Management", level: 3 },
-        { name: "Asset Management Lifecycle", level: 3 }
-      ]
+        { name: "SQL (Advanced Queries, CTEs, Joins)", level: 7 },
+        { name: "Power BI (DAX, Modeling, Reports)", level: 4 },
+        { name: "Excel (Power Query, PivotTables)", level: 4 },
+        { name: "Tableau (Visual Analytics)", level: 5 },
+        { name: "Python (Pandas, NumPy, Dash)", level: 6 },
+        { name: "Data Storytelling & Dashboards", level: 6 },
+      ],
     },
     {
-      name: "Programming & Scripting",
+      name: "Data Infrastructure & Modeling",
       skills: [
-        { name: "Python", level: 6 },
-        { name: "SQL", level: 7 },
-        { name: "PowerShell", level: 4 },
-        { name: "JavaScript", level: 3 },
-        { name: "Java", level: 4 },
-        { name: "Bash", level: 5 }
-      ]
+        { name: "SQL Server / RDS / Postgres", level: 5 },
+        { name: "Data Modeling & Normalization", level: 6 },
+        { name: "ERDs & Process Mapping", level: 6 },
+        { name: "ETL Concepts & Data Pipelines", level: 5 },
+        { name: "Git & Version Control", level: 5 },
+        { name: "JSON, APIs, & Data Integrations", level: 4 },
+      ],
     },
     {
-      name: "Data & Business Analytics",
+      name: "Cloud & Application Platforms",
       skills: [
-        { name: "Power BI", level: 6 },
-        { name: "SQL Server", level: 4 },
-        { name: "Data Modeling", level: 6 },
-        { name: "Excel (Advanced)", level: 6 },
-        { name: "AI Querying & Automation", level: 7 }
-      ]
+        { name: "Infor CloudSuite Financials", level: 6 },
+        { name: "IBM Maximo & Asset Lifecycle", level: 4 },
+        { name: "Azure (AD, SharePoint, Logic Apps)", level: 5 },
+        { name: "ServiceNow (ITSM & Reporting)", level: 4 },
+        { name: "Power Automate / Flow", level: 5 },
+        { name: "Linux (Ubuntu / RHEL)", level: 5 },
+      ],
     },
     {
-      name: "Business Leadership & Project Management",
+      name: "Business Process & Delivery",
       skills: [
-        { name: "Project Management", level: 4 },
-        { name: "IT Strategy & Governance", level: 4 },
-        { name: "Agile & Scrum", level: 3 },
-        { name: "Process Optimization", level: 5 },
-        { name: "Risk Management", level: 3 }
-      ]
-    }
+        { name: "Requirements Gathering", level: 6 },
+        { name: "Stakeholder Communication", level: 6 },
+        { name: "Agile & Scrum Collaboration", level: 4 },
+        { name: "Business Process Mapping", level: 5 },
+        { name: "Documentation & SOP Writing", level: 6 },
+        { name: "Project Coordination", level: 5 },
+      ],
+    },
   ];
 
   return (
